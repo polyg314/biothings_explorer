@@ -35,6 +35,8 @@ class SmartAPIParser():
     def fetch_server_url(self):
         """fetch the server url of the API.
         """
+        print("URLLLLLL")
+        print(self.spec['servers'][0]['url'])
         return self.spec['servers'][0]['url']
 
     @staticmethod
