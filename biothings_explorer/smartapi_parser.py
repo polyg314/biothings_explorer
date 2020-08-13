@@ -35,8 +35,12 @@ class SmartAPIParser():
     def fetch_server_url(self):
         """fetch the server url of the API.
         """
-        print("URLLLLLL")
-        print(self.spec['servers'][0]['url'])
+#         print("URLLLLLL")
+#         print(self.spec['servers'][0]['url'])
+        if(self.spec['servers'][0]['url'] == "https://automat.renci.org/cord19_scibite_v2"):
+           self.spec['servers'][0]['url'] = "https://automat.renci.org/cord19-scibite"
+        if(self.spec['servers'][0]['url'] == "https://automat.renci.org/cord19_scigraph_v2"):
+           self.spec['servers'][0]['url'] = "https://automat.renci.org/cord19-scigraph
         return self.spec['servers'][0]['url']
 
     @staticmethod
