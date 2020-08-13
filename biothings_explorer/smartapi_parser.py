@@ -40,7 +40,7 @@ class SmartAPIParser():
         if(self.spec['servers'][0]['url'] == "https://automat.renci.org/cord19_scibite_v2"):
            self.spec['servers'][0]['url'] = "https://automat.renci.org/cord19-scibite"
         if(self.spec['servers'][0]['url'] == "https://automat.renci.org/cord19_scigraph_v2"):
-           self.spec['servers'][0]['url'] = "https://automat.renci.org/cord19-scigraph
+           self.spec['servers'][0]['url'] = "https://automat.renci.org/cord19-scigraph"
         return self.spec['servers'][0]['url']
 
     @staticmethod
